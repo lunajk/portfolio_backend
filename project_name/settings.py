@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-)4d2i27pgl!-&%bfup&&+sj78ce7$h+q*uc6r$s+plexr&m^4)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'portfolio-backend-ic9s.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -128,8 +132,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # your React frontend, etc.
+    "https://portfolio-lunajks-projects.vercel.app",
+    "http://localhost:5173",  # for local development
 ]
+
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"  
